@@ -5,8 +5,8 @@ After=network.target
 [Service]
 Type=simple
 User=hallmatt
-WorkingDirectory=/home/hallmatt/project
-ExecStart=/home/hallmatt/project/env/bin/python3 /home/hallmatt/project/sensor_server.py
+WorkingDirectory=[PATH TO SENSOR_SERVER FOLDER]
+ExecStart=[PATH TO SENSOR_SERVER FOLDER]/env/bin/python3 [PATH TO SENSOR_SERVER FOLDER]/sensor_server.py
 Restart=always
 RestartSec=5
 Environment="PATH=/home/pi/project/env/bin:/usr/bin:/bin"

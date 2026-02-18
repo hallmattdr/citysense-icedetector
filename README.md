@@ -2,6 +2,9 @@
 Compact, deployable surface ice detection system with thermal sensing and imaging, sensor logging, and live updates  
 ENGR 100:190 Final Project *– Matt Hall, Lucas Wells, Clara James-Heer, Lily McCreedy*
 
+### Attention:
+If you're reading this after downloading the archive onto a fresh Raspberry Pi OS, you can skip to [Sensor Server](#sensor-server)
+
 ## Project Details
 All project information including our research, project proposal, and design choices can be found on my [website](https://hallmattdr.wixsite.com/home/ice-detector). This document will focus on the hardware requirements and code for the device.
 
@@ -52,9 +55,21 @@ In order to remote desktop, however, you will need to initially connect the Rasp
 * On your client PC, open TigerVNC. Once the Pi has restarted, enter the IP address that you saved before, and click **connect**. Select **yes** for any confirmations that appear, and enter the username and password that you configured for your Pi, then click **OK**. A new window should open with a remote connection to your desktop
 * Now you can disconnect the monitor and peripherals from your Pi, and use this remote connection to work from your client PC
 
+#### Final Preparation
+* Create a folder on the Raspberry Pi desktop to hold your files and data
+* Download the latest release of the [sensor server archive files](https://github.com/hallmattdr/citysense-icedetector/releases) **onto your Raspberry Pi**. Extract it into the folder you created
+* Now we can verify that your sensors are wired correctly
+   * Open a terminal on the Pi
+   * Enter these commands:
+     * `sudo apt update`
+     * `apt install -y i2c-tools`
+     * `sudo i2cdetect -y 1`
+   * This prints out a table of available hex address, most of which should be "--". Somewhere on the table you should see the addresses `0x3A` and `0x33`
+   * If you see those, you're all set to move on. If not, you need to verify your wiring is correct before you move forward
+
 ### Sensor Server
 
 ### n8n Integration
-
+The real power of this program is its integration with workflow automation system *n8n*.
 ### System Architecture Diagram
 ![](./Images/Flowchart.jpg)

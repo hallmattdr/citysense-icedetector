@@ -24,7 +24,7 @@ MAX_HISTORY = 50000 # Local records
 MEASUREMENT_INTERVAL = 60.0*5.0 # Seconds
 SAVE_INTERVAL = MEASUREMENT_INTERVAL*5.0 # Seconds (local save timer)
 PUSH_INTERVAL = SAVE_INTERVAL # Seconds (n8n push)
-HISTORY_FILE = "/home/hallmatt/project/history.json"
+HISTORY_FILE = "./history.json"
 UNIT_ID = 1
 
 #
