@@ -1,0 +1,15 @@
+[Unit]
+Description=Raspberry Pi Sensor API
+After=network.target
+
+[Service]
+Type=simple
+User=hallmatt
+WorkingDirectory=/home/hallmatt/project
+ExecStart=/home/hallmatt/project/env/bin/python3 /home/hallmatt/project/sensor_server.py
+Restart=always
+RestartSec=5
+Environment="PATH=/home/pi/project/env/bin:/usr/bin:/bin"
+
+[Install]
+WantedBy=multi-user.target

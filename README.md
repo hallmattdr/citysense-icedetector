@@ -10,6 +10,7 @@ This code is designed to work specifically with the hardware we chose for our pr
 * Embedded System: [RaspberryPi 3 Model B](https://www.raspberrypi.com/products/raspberry-pi-3-model-b/)
 * Thermal Camera: [Waveshare MLX90641](https://www.waveshare.com/mlx90641-d55-thermal-camera.htm)
 * IR Sensor: [Adafruit MLX90632](https://www.adafruit.com/product/6403)
+   * I also recommend a STEMMA QT Qwiic cable to make easy connections to the breadboard. Adafruit sells [single cables](https://www.adafruit.com/product/4209), or you can puchase a set of cables from [Amazon](https://www.amazon.com/dp/B08HQ1VSVL)
 * Basic Breadboard
 * Various Breadboard Wires
 * Micro-SD Card for Raspberri Pi OS: [SanDisk 32GB](https://www.amazon.com/SanDisk-Ultra%C2%AE-microSDHC-120MB-Class/dp/B08L5HMJVW/ref=sr_1_8?crid=2JL0BG9U393CC&dib=eyJ2IjoiMSJ9.yrP4UaR9Qm2nBvVQHjgYJHmGdvUwh-8r5OpA8qYWNfnFdDn1qkv5REyGd3JC9NAYodBGoqPSaUlhAN0OiIk6lsZ0a5K24iVhL4A1j2qkDlAhOVbo1FiOnRS1Ar-hsQEyN54Rw0nvHceXx44prIXxhDdO127cIRFmjM3YmZExjegSOOnwQmfG4B_vPZ7C4ZTEUXSJCoRR3LJCs6fH5ORYaBC3knjsVea-7JTaE_W1epY.DR6W6QCN-kNh00_Dpa8vWEjROWIbbWN1L9Inj65hXcc&dib_tag=se&keywords=sandisk%2Bmicro%2Bsd%2Bcard&qid=1771350585&sprefix=sandisk%2Bmicro%2Bsd%2Bcar%2Caps%2C147&sr=8-8&th=1)
